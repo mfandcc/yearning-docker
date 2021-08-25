@@ -13,7 +13,7 @@ EXPOSE 8000
 
 ARG YEARNING_VER="2.3.5"
 ARG YEARNING_REL_NAME="-linux-amd64.zip"
-ARG YEARNING_URL="https://github.com/cookieY/Yearning/releases/download/v${YEARNING_VER}/Yearning-${YEARNING_VER}${YEARNING_REL_NAME}"
+ARG YEARNING_URL="https://github.com/cookieY/Yearning/releases/download/${YEARNING_VER}/Yearning-${YEARNING_VER}${YEARNING_REL_NAME}"
 RUN wget -cqO yearning.zip $YEARNING_URL; \
     unzip yearning.zip -d /opt; \
     rm -f yearning.zip
